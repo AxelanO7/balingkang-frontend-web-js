@@ -1,0 +1,614 @@
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #a10303;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #a20404, #ff0100);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #a20404, #ff0100);
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #a20404;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #a20404;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/*--------------------------------------------------------------
+# Feature
+--------------------------------------------------------------*/
+.features .icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+
+.features .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.features .icon-box .icon i {
+  color: #ff0100;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.features .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.features .icon-box h4 a {
+  color: #a20404;
+  transition: ease-in-out 0.3s;
+}
+
+.features .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.features .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.features .icon-box:hover h4 a {
+  color: #ff0100;
+}
+
+/*--------------------------------------------------------------
+# History
+--------------------------------------------------------------*/
+.history .content {
+  padding: 60px 100px 0 100px;
+  color: #f8f9fa;
+}
+
+.history .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.history .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.history .content p {
+  font-size: 15px;
+}
+
+.history .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.history .accordion-list {
+  padding: 0 100px 60px 100px;
+}
+
+.history .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.history .accordion-list li + li {
+  margin-top: 15px;
+}
+
+.history .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.history .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #192a54;
+}
+
+.history .accordion-list span {
+  color: #192a54;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.history .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.history .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.history .accordion-list .icon-show {
+  display: none;
+}
+
+.history .accordion-list a:hover {
+  color: #ff0100;
+}
+
+.history .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.history .accordion-list a.collapsed:hover {
+  color: #ff0100;
+}
+
+.history .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.history .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .history .content,
+  .history .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .history .img {
+    min-height: 400px;
+  }
+  .history .content {
+    padding-top: 30px;
+  }
+  .history .accordion-list {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .history .img {
+    min-height: 200px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+.header_structure .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.header_structure .section-title h1 {
+  //   font-size: 32px;
+  //   font-weight: bold;
+  //   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.header_structure .section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.header_structure .section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #a20404;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/*--------------------------------------------------------------
+# Structure Piodalan
+--------------------------------------------------------------*/
+.piodalan_structure .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.piodalan_structure .section-title h1 {
+  //   font-size: 32px;
+  //   font-weight: bold;
+  //   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.piodalan_structure .section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.piodalan_structure .section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #a20404;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+/*--------------------------------------------------------------
+# Structure Piodalan
+--------------------------------------------------------------*/
+.piodalan_structure .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.piodalan_structure .section-title h1 {
+  //   font-size: 32px;
+  //   font-weight: bold;
+  //   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.piodalan_structure .section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+/*--------------------------------------------------------------
+# Structure pangempon
+--------------------------------------------------------------*/
+.pengempon_structure {
+  color: #f8f9fa;
+}
+
+.pangempon_structure .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.pangempon_structure .section-title h1 {
+  //   font-size: 32px;
+  //   font-weight: bold;
+  //   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.pangempon_structure .section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #f8f9fa;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.pangempon_structure .section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #f8f9fa;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.pangempon_structure .section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #f8f9fa;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/*--------------------------------------------------------------
+# History
+--------------------------------------------------------------*/
+.trimandala .content {
+  //   padding: 60px 100px 0 100px;
+  color: #f8f9fa;
+}
+
+.trimandala .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.trimandala .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.trimandala .content p {
+  font-size: 15px;
+}
+
+.trimandala .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.trimandala .accordion-list {
+  //   padding: 0 100px 60px 100px;
+}
+
+.trimandala .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.trimandala .accordion-list li + li {
+  margin-top: 15px;
+}
+
+.trimandala .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.trimandala .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #192a54;
+}
+
+.trimandala .accordion-list span {
+  color: #192a54;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.trimandala .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.trimandala .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.trimandala .accordion-list .icon-show {
+  display: none;
+}
+
+.trimandala .accordion-list a:hover {
+  color: #ff0100;
+}
+
+.trimandala .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.trimandala .accordion-list a.collapsed:hover {
+  color: #ff0100;
+}
+
+.trimandala .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.trimandala .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .trimandala .content,
+  .trimandala .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .trimandala .img {
+    min-height: 400px;
+  }
+  .trimandala .content {
+    padding-top: 30px;
+  }
+  .trimandala .accordion-list {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .trimandala .img {
+    min-height: 200px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Structure Photo
+--------------------------------------------------------------*/
+.photo .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.photo .section-title h2 {
+  //   font-size: 32px;
+  //   font-weight: bold;
+  //   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.photo .section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.photo .list-photo h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Hello Admin
+--------------------------------------------------------------*/
+.admin_page .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.admin_page .section-title h1 {
+  //   font-size: 32px;
+  font-weight: bold;
+  //   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.admin_page .section-title h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.admin_page .section-title h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #6c757d;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
